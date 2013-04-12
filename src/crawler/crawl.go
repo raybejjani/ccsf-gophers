@@ -52,6 +52,7 @@ func main() {
 		varies   = make(chan VarySender, 128)
 	)
 
+	fmt.Printf("Version %s\n", version)
 	fmt.Printf("Getting %d urls: %v\n", len(urls), urls)
 
 	for _, url := range urls {
